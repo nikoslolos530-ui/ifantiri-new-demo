@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="el">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Επικοινωνία — Υφαντήρι Ιστορίας</title>
+<meta name="description" content="Επικοινωνήστε με το Υφαντήρι Ιστορίας για μαθήματα, σεμινάρια και επιμέλεια βιβλίου.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400&family=PT+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div id="nav-placeholder"></div>
+
+<section class="page-hero">
+  <div class="container">
+    <div class="demo-note">
+      Προσωρινό περιεχόμενο — λείπουν: τηλέφωνο, email, τυχόν social media. Η φόρμα παρακάτω είναι έτοιμη για Netlify Forms (λειτουργεί αυτόματα μόλις ανέβει στο Netlify).
+    </div>
+    <p class="eyebrow">Επικοινωνία</p>
+    <h1>Ας μιλήσουμε</h1>
+    <p class="lede">Στείλτε μας μήνυμα για μαθήματα, σεμινάρια ή επιμέλεια βιβλίου — απαντάμε το συντομότερο δυνατό.</p>
+  </div>
+</section>
+
+<section>
+  <div class="container">
+    <div class="two-col">
+      <div>
+        <h2>Στοιχεία επικοινωνίας</h2>
+        <p>
+          Τηλέφωνο: [προς συμπλήρωση]<br>
+          Email: [προς συμπλήρωση]<br>
+          Περιοχή: Καλαμάτα &amp; online μαθήματα πανελλαδικά
+        </p>
+      </div>
+      <div>
+        <h2>Φόρμα επικοινωνίας</h2>
+        <form name="contact" method="POST" data-netlify="true">
+          <input type="hidden" name="form-name" value="contact">
+          <div class="form-field">
+            <label for="name">Ονοματεπώνυμο</label>
+            <input type="text" id="name" name="name" required>
+          </div>
+          <div class="form-field">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+          </div>
+          <div class="form-field">
+            <label for="topic">Θέμα ενδιαφέροντος</label>
+            <input type="text" id="topic" name="topic" placeholder="π.χ. Πανελλαδικές, Σεμινάριο, Επιμέλεια βιβλίου">
+          </div>
+          <div class="form-field">
+            <label for="message">Μήνυμα</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+          </div>
+          <button type="submit" class="btn">Αποστολή μηνύματος</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div id="footer-placeholder"></div>
+
+<script src="js/nav.js"></script>
+<script src="js/footer.js"></script>
+</body>
+</html>
