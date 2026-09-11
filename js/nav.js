@@ -1,11 +1,13 @@
 document.addEventListener("DOMContentLoaded", function () {
   const navLinks = [
     { href: "index.html", label: "Αρχική" },
-    { href: "panelladikes.html", label: "Πανελλαδικές" },
-    { href: "katataktiries.html", label: "Κατατακτήριες" },
-    { href: "ergasies.html", label: "Εργασίες" },
     { href: "seminaria.html", label: "Σεμινάρια" },
+    { href: "foititika.html", label: "Φοιτητικά" },
+    { href: "panelladikes.html", label: "Πανελλαδικές" },
     { href: "epimeleia.html", label: "Επιμέλεια" },
+    { href: "katataktiries.html", label: "Κατατακτήριες" },
+    { href: "apothetirio.html", label: "Αποθετήριο" },
+    { href: "podcast.html", label: "Podcasts" },
     { href: "sxetika.html", label: "Σχετικά" },
     { href: "epikoinonia.html", label: "Επικοινωνία" }
   ];

@@ -18,10 +18,10 @@ document.addEventListener("DOMContentLoaded", function () {
     '<div>' +
     '<h3>Πλοήγηση</h3>' +
     '<ul class="footer-nav">' +
-    '<li><a href="panelladikes.html">Πανελλαδικές</a></li>' +
-    '<li><a href="katataktiries.html">Κατατακτήριες</a></li>' +
     '<li><a href="seminaria.html">Σεμινάρια</a></li>' +
-    '<li><a href="epimeleia.html">Επιμέλεια Βιβλίου</a></li>' +
+    '<li><a href="foititika.html">Φοιτητικά</a></li>' +
+    '<li><a href="panelladikes.html">Πανελλαδικές</a></li>' +
+    '<li><a href="epimeleia.html">Επιμέλεια</a></li>' +
     "</ul>" +
     "</div>" +
     '<div>' +
