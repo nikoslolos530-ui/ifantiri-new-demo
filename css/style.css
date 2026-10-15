@@ -99,6 +99,7 @@ a:focus-visible, button:focus-visible {
 }
 
 .nav-wrap {
+  position: relative;
   max-width: var(--max-width);
   margin: 0 auto;
   padding: 16px 40px;
@@ -143,6 +144,59 @@ a:focus-visible, button:focus-visible {
 .nav-links a:hover { color: var(--accent-deep); background: var(--paper-deep); }
 .nav-links a.active { color: var(--accent); font-weight: 700; }
 
+/* ---------------- NAV DROPDOWN ("Μαθήματα") ---------------- */
+
+.nav-dropdown { position: relative; }
+
+.nav-dropdown-toggle {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  white-space: nowrap;
+  padding: 9px 11px;
+  color: var(--ink);
+  font-family: var(--font-body);
+  font-size: 1.15rem;
+  font-weight: 500;
+  border: none;
+  background: none;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: color 0.15s ease, background 0.15s ease;
+}
+.nav-dropdown-toggle:hover { color: var(--accent-deep); background: var(--paper-deep); }
+.nav-dropdown-toggle.active { color: var(--accent); font-weight: 700; }
+.nav-dropdown-caret { font-size: 0.7em; transition: transform 0.15s ease; }
+.nav-dropdown-toggle[aria-expanded="true"] .nav-dropdown-caret { transform: rotate(180deg); }
+
+.nav-dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  min-width: 220px;
+  margin: 4px 0 0;
+  padding: 6px 0;
+  list-style: none;
+  background: var(--paper);
+  border: 1px solid var(--line);
+  border-radius: 4px;
+  box-shadow: 0 10px 24px rgba(43, 32, 19, 0.14);
+  z-index: 110;
+}
+.nav-dropdown-menu.open { display: flex; flex-direction: column; }
+.nav-dropdown-menu a {
+  display: block;
+  padding: 10px 16px;
+  color: var(--ink);
+  font-size: 1.05rem;
+  font-weight: 500;
+  white-space: nowrap;
+  border-radius: 0;
+}
+.nav-dropdown-menu a:hover { color: var(--accent-deep); background: var(--paper-deep); }
+.nav-dropdown-menu a.active { color: var(--accent); font-weight: 700; }
+
 .nav-toggle {
   display: none;
   background: none;
@@ -154,7 +208,7 @@ a:focus-visible, button:focus-visible {
   font-size: 1.1rem;
 }
 
-@media (max-width: 1400px) {
+@media (max-width: 1150px) {
   .nav-toggle { display: block; }
   .nav-links {
     display: none;
@@ -172,6 +226,28 @@ a:focus-visible, button:focus-visible {
   .nav-links.open { display: flex; }
   .nav-links a { padding: 13px 8px; border-bottom: 1px solid var(--line); }
   .nav-logo img { height: 216px; }
+
+  .nav-dropdown-toggle {
+    width: 100%;
+    justify-content: space-between;
+    padding: 13px 8px;
+    border-bottom: 1px solid var(--line);
+    border-radius: 0;
+    font-size: 1.15rem;
+  }
+  .nav-dropdown-menu {
+    position: static;
+    display: none;
+    width: 100%;
+    margin: 0;
+    padding: 0 0 0 16px;
+    border: none;
+    border-radius: 0;
+    box-shadow: none;
+    background: var(--paper-deep);
+  }
+  .nav-dropdown-menu.open { display: flex; }
+  .nav-dropdown-menu a { padding: 12px 8px; border-bottom: 1px solid var(--line); }
 }
 
 /* ---------------- HERO ---------------- */
