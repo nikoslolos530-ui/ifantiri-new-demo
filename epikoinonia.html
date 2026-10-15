@@ -15,9 +15,6 @@
 
 <section class="page-hero">
   <div class="container">
-    <div class="demo-note">
-      Προσωρινό περιεχόμενο — λείπουν: τηλέφωνο, email, τυχόν social media. Η φόρμα παρακάτω είναι έτοιμη για Netlify Forms (λειτουργεί αυτόματα μόλις ανέβει στο Netlify).
-    </div>
     <p class="eyebrow">Επικοινωνία</p>
     <h1>Ας μιλήσουμε</h1>
     <p class="lede">Στείλτε μας μήνυμα για μαθήματα, σεμινάρια ή επιμέλεια βιβλίου — απαντάμε το συντομότερο δυνατό.</p>
@@ -30,15 +27,15 @@
       <div>
         <h2>Στοιχεία επικοινωνίας</h2>
         <p>
-          Τηλέφωνο: [προς συμπλήρωση]<br>
-          Email: [προς συμπλήρωση]<br>
+          Email: <a href="mailto:yfantiriistorias@gmail.com">yfantiriistorias@gmail.com</a><br>
           Περιοχή: Καλαμάτα &amp; online μαθήματα πανελλαδικά
         </p>
       </div>
       <div>
         <h2>Φόρμα επικοινωνίας</h2>
-        <form name="contact" method="POST" data-netlify="true">
-          <input type="hidden" name="form-name" value="contact">
+        <form action="https://formsubmit.co/yfantiriistorias@gmail.com" method="POST">
+          <input type="hidden" name="_subject" value="Νέο μήνυμα από το Υφαντήρι Ιστορίας">
+          <input type="hidden" name="_template" value="table">
           <div class="form-field">
             <label for="name">Ονοματεπώνυμο</label>
             <input type="text" id="name" name="name" required>
